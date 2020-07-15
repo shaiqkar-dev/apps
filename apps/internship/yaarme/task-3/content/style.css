@@ -2,6 +2,9 @@
 .hoverable {
     cursor: pointer;
 }
+.m-only {
+    display: none;
+}
 
 /* Styles for menu hamburger icon */
 .s-menu {
@@ -27,6 +30,9 @@
 /* sidebar */
 
 @media screen and (max-width: 648px) {
+    .m-only {
+        display: block;
+    }
     .mobile-sidebar {
         position: fixed;
         top: 0;
