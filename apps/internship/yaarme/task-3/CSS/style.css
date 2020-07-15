@@ -38,9 +38,12 @@ body{
     background-size: 2.4em;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("Images/main-icon.png");
     cursor: pointer;
     display: block;
+}
+.i-logo {
+    background-image: url("./img/linkedin-icon.svg");
+    background-size: 2em;
 }
 .input-wrap{
     display: flex;
@@ -63,7 +66,7 @@ body{
 .search-icon{
     width: 1.5em;
     height: 1.5em;
-    background-image: url("Images/search-menu.png");
+    background-image: url("./img/search.svg");
     background-size: 0.75em;
 }
 .nav-icons{
@@ -81,39 +84,50 @@ body{
     opacity: 1;
 }
 .home-icon{
-    background-image: url("Images/home-icon.png");
+    background-image: url("./img/home.svg");
     background-size: 1.2em;
     filter: invert(1);
 }
 .user-icon{
-    background-image: url("Images/user.png");
+    background-image: url("./img/network.svg");
     filter: invert(1);
     background-size: 1.2em;
 }
 .suit-icon{
-    background-image: url("Images/suit-icon.png");
+    background-image: url("./img/jobs.svg");
     background-size: 1.25em;
+    filter: invert(1);
 }
 .chat-icon{
-    background-image: url("Images/chat.png");
+    background-image: url("./img/message.svg");
     background-size: 1.5em;
+    filter: invert(1);
 }
 .notify-icon{
-    background-image: url("Images/notify.png");
+    background-image: url("./img/notifications.svg");
     background-size: 1.5em;
+    filter: invert(1);
 }
-.me-icon{
-    background-image: url("Images/user-icon.png");
-    background-size: 1.75em;
+.me-icon {
+    display: flex;
+    align-items: center;
+}
+.me-icon img{
+   
+    border-radius: 50%;
+    width: 2em;
+    /* height: 100%; */
+  
 }
 .menu-icon{
-    background-image: url("Images/menu-ham.png");
+    background-image: url("./img/work.svg");
     background-size: 1.1em;
     filter: invert(1);
 }
 .add-icon{
-    background-image: url("Images/add-icon.png");
+    background-image: url("./img/add.svg");
     background-size: 1.25em;
+    filter: invert(1);
 }
 .active{
     border-bottom-color: black !important;
@@ -133,7 +147,7 @@ body{
 .work{
     height: 1.5em;
     height: 1.5em;
-    background-image: url("Images/menu.png");
+    background-image: url("./img/work.svg");
     filter: invert(1);
     background-size: 1.25em;
 }
@@ -183,10 +197,10 @@ body{
 .qrcode-icon{
     width: 1.5em;
     height: 1.5em;
-    background-size: 1.45em;
+    background-size: 1.25em;
     margin-right: 0.35em;
     opacity: 0.75;
-    background-image: url("Images/qrcode.png");
+    background-image: url("./img/qrcode.svg");
 }
 .mobile-nav-bar{
     display: none;
@@ -200,14 +214,17 @@ body{
 .mobile-nav-bar .nav-icons{
     width: 100%;
 }
-.mobile-nav-bar .home-icon,
+/* .mobile-nav-bar .icon,
 .mobile-nav-bar .user-icon{
     filter: unset;
-}
-.mobile-nav-bar .suit-icon,
+} */
+/* .mobile-nav-bar .suit-icon,
 .mobile-nav-bar .notify-icon{
     filter: invert(1);
-}
+} */
+.mobile-nav-bar .icon{
+    filter: unset !important;
+} 
 .container-wrap{
     padding: 1em;
     width: 100%;
@@ -250,8 +267,7 @@ body{
 .more-icon{
     width: 2em;
     height: 2em;
-    background-image: url("Images/more.png");
-    transform: rotate(90deg);
+    background-image: url("img/more.svg");
     background-size: 1.5em;
     border-radius: 50%;
 }
@@ -310,7 +326,7 @@ body{
     margin-left: 0.25em;
 }
 .globe-icon{
-    background-image: url("Images/globe.png");
+    background-image: url("./img/world.svg");
 }
 .follow{
     padding: 0.5em 0.85em;
@@ -384,15 +400,15 @@ body{
     font-size: 0.7em;
 }
 .like-icon{
-    background-image: url("Images/like.png");
-    transform: scaleX(-1);
+    background-image: url("./img/thumb.svg");
+    /* transform: scaleX(-1); */
 }
 .info-icon{
-    background-image: url("Images/info.png");
+    background-image: url("./img/bulb.svg");
 }
 .love-icon{
-    background-image: url("Images/love.png");
-    transform: scaleX(0.9);
+    background-image: url("./img/heart.svg");
+    /* transform: scaleX(0.9); */
 }   
 .votes{
     padding: 0 0.5em;
@@ -422,17 +438,17 @@ body{
     margin-right: 0.5em;
 }
 .like-i{
-    background-image: url("Images/like-icon.png");
+    background-image: url("./img/like.svg");
     transform: scaleX(-1);
 }
 .comment-icon{
-    background-image: url("Images/comment.png");
+    background-image: url("./img/comment.svg");
 }
 .share-icon{
-    background-image: url("Images/share.png");
+    background-image: url("./img/share.svg");
 }
 .send-icon{
-    background-image: url("Images/send.png");
+    background-image: url("./img/send.svg");
 }
 @media only screen and (max-width:1300px){
     .main-navbar{
