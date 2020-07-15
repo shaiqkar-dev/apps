@@ -1,0 +1,138 @@
+/* helpers */
+.hoverable {
+    cursor: pointer;
+}
+
+/* Styles for menu hamburger icon */
+.s-menu {
+    width: 2.75em;
+    height: 2.75em;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-menu img {
+    width: 2rem;
+    height: 1.9rem;
+}
+
+.s-menu:hover img {
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 167ms;
+    transform: scale(1.1);
+}
+
+/* sidebar */
+
+@media screen and (max-width: 648px) {
+    .mobile-sidebar {
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        z-index: 40;
+        width: 18rem;
+        background: #fff;
+        left: -100%;
+        -webkit-transition: left .5s ease-out;
+        transition: left .5s ease-out;
+    }
+    .mobile-sidebar-active {
+        left: 0;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2)
+    }
+    .drop-active {
+        transition: ease-in 0.2s;
+        display: flex !important;
+    }
+    .drop-active-btn {
+        transform: unset !important;
+        transition: all 0.3s;
+    }
+    .ms-top-sec {
+        display: flex;
+        background: #0077B5;
+        flex-direction: column;
+    }
+    .ms-ts-top {
+        padding: 1rem;
+        vertical-align: top;
+        display: flex;
+    }
+    .ms-pimg {
+        width: 3rem;
+        height: 100%;
+        border-radius: 50%;
+    }
+    .ms-ts-top-switch {
+        width: 1.3rem;
+        margin-left: auto;
+        transform: rotate(250deg);
+    }
+    .ms-ts-bottom {
+        display: flex;
+        padding: 0 1rem 1rem 1rem;
+        color: #fff;
+        font-size: 14px;
+    }
+    .ms-drop {
+        margin-left: auto;
+    }
+    .ms-drop img {
+        margin-top: .6rem;
+        transform: rotate(180deg);
+        width: 1.1rem;
+    }
+    .ms-drop-nav {
+        display: none;
+        flex-direction: column;
+        padding: 0.65rem 0;
+        border-bottom: 1px solid #e6e9ec;
+        
+    }
+    .ms-drop-item {
+        display: flex;
+        padding: 0.3rem 1rem;
+        align-items: center;
+    }
+    .ms-drop-item  span{
+        padding-left: 1.5rem;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0,0,0,0.9);
+    }
+    .ms-drop-profile img {
+        width: 1.5rem;
+        border-radius: 50%;
+    }
+    .ms-nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0.65rem 0;
+    }
+    .ms-nav .ms-nav-item {
+        display: flex;
+        padding: 0.65rem 1rem;
+        align-items: center;
+    }
+    .ms-nav .ms-nav-item:hover, .ms-drop-item:hover {
+        background: #e1e9f1;
+        cursor: pointer;
+    }
+    .ms-nav-item span{
+        padding-left: 1.5rem;
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(0,0,0,0.9);
+    }
+    .ms-nav-item img {
+        width: 1.2rem;
+    }
+    .ms-nav-break {
+        width: 100%;
+        height: 1px;
+        background: #e6e9ec;
+        margin: 0.3rem 0;
+    }
+}
