@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaarMe Chat</title>
+
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
+
+</head>
+
+<body>
+    
+    <!-- header section -->
+    <header class="flex align-centre relative">
+
+        <div class="flex align-centre left-sec">
+            <a href="#" class="flex logo">
+                <img src="./static/img/icons/logo.svg" alt="logo">
+                <span>YaarMe Chat</span>
+            </a>
+
+        </div>
+
+        <div class="flex right-sec"> 
+            <div class="relative">
+                <a class="flex align-centre profile">
+                    <img src="./static/img/profile-2.jpg" alt="Shaiq Kar">
+                    <span style="margin-left: .5rem;">Rachna Singh</span>
+                </a>
+            </div>
+            <div class="relative">
+                <a class="flex align-centre profile">
+                    <span>Shaiq Kar</span>
+                    <img src="./static/img/profile.jpg" alt="Shaiq Kar">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- main app part -->
+    <main id="app" class="flex">
+
+        <div class="flex container">
+            <!-- Chats sidebar -->
+            <div class="flex chats-sidebar">
+
+                <div class="flex align-centre chats-sidebar-header">
+                    <span style="font-size: 21px">Chats</span>
+                </div>
+
+                <div class="chats-search">
+                    <form>
+                        <input type="text" placeholder="Search" class="input">
+                    </form>
+                </div>
+
+                <div class="chats-active" tabindex="2">
+                    <ul class="flex chats">
+
+                        <li class="flex chat-item" style=" border-top: 0">
+                            <div class="avatar avatar-g">
+                                <img src="static/img/profile-4.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Aaliya</h5>
+                                    <p>Whats up, plz send the assignment</p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <div class="flex msg-count">4</div>
+                                    <small class="t-pr">02:34 PM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar avatar-y">
+                                <img src="static/img/profile-5.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Rane Smith</h5>
+                                    <p>
+                                        <img src="./static/img/icons/camera.svg" style="width: 12px;margin-right: .25rem"> 
+                                        Photo
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <div class="flex msg-count">1</div>
+                                    <small class="t-pr">Yesterday</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item active-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-2.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5 class="t-pr">Rachna Singh</h5>
+                                    <p style="font-weight: 600;color: #646464">I sent you all the files. Good Luck with...</p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">11:05 AM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-3.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Candice</h5>
+                                    <p>
+                                        I need you today. Can you come with me?
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">08:41 AM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar family-chat">
+                                <img src="static/img/icons/family.svg" style="width:25px;">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>= MY Family =</h5>
+                                    <p>
+                                       <span style="font-weight: 600">Maher Ruslandi: </span> Hello
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">Yesterday</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar avatar-y">
+                                <img src="static/img/profile-1.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Jennica Kindred</h5>
+                                    <p>
+                                        <img src="./static/img/icons/video.svg" style="width: 12px;margin-right: .25rem"> 
+                                        Video
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">03:41 PM</small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="flex chat-item">
+                            <div class="avatar">
+                                <img src="static/img/profile-6.jpg">
+                            </div>
+                            <div class="flex relative chat-item-body">
+                                <div class="flex chat-sender-m">
+                                    <h5>Shikhar</h5>
+                                    <p>
+                                        Bro, party next week
+                                    </p>
+                                </div>
+                                <div class="chat-s-data">
+                                    <small class="t-m">07:13 PM</small>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="chats-new">
+                    <button class="chats-new-btn">New Chat</button>
+                </div>
+
+            </div>
+            <!-- //Chats sidebar -->
+
+            <!-- chat window -->
+            <div class="chat-window flex">
+                <div class="chat-messages" tabindex="1">
+                    <div class="flex messages" id="msg-box"> 
+
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Hello, how are you?
+                                </div>
+                                <div class="msg-time">
+                                    09:35 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                   i am fine, how are you?
+                                </div>
+                                <div class="msg-time">
+                                    09:41 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I am fine, thank you. I expect you to send me some files
+                                </div>
+                                <div class="msg-time">
+                                    09:45 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    What files are you talking about? I am sorry i can't remember right now
+                                </div>
+                                <div class="msg-time">
+                                    09:47 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I need the YaarMe project report of last week, with the images
+                                </div>
+                                <div class="msg-time">
+                                    09:55 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Ah! those files, wait i will send in a moment
+                                </div>
+                                <div class="msg-time">
+                                    09:59 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Ya! but send them asap. I need them urgently
+                                </div>
+                                <div class="msg-time">
+                                    10:03 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Sure, sending to you in 10 minutes
+                                </div>
+                                <div class="msg-time">
+                                    10:09 AM
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Where are the files?
+                                </div>
+                                <div class="msg-time">
+                                    10:25 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Sorry i got a bit bussy, just now i sent
+                                </div>
+                                <div class="msg-time">
+                                    10:31 AM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg msg-in">
+                            <div class="flex" style="justify-content: flex-end">
+                                <img class="msg-avatar" src="./static/img/profile.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    Thank you, got the files
+                                </div>
+                                <div class="msg-time">
+                                    10:45 AM
+                                    <span class="double-tick">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"/></svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="msg">
+                            <div class="flex">
+                                <img class="msg-avatar" src="./static/img/profile-2.jpg">
+                            </div>
+                            <div>
+                                <div class="msg-msg">
+                                    I sent you all the files. Good luck with the project
+                                </div>
+                                <div class="msg-time">
+                                    11:05 AM
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="chat-controls">
+                    <form class="flex align-centre">               
+                        <div class="cc-emoji">
+                            <button  type="button" class="cc-button" style=" margin-right: 1rem!important;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                            </button>
+                        </div>
+                        <input type="text" placeholder="Write your message" class="input" style="padding: 6px 12px;">
+                        <div class="flex">
+                            <button class="cc-button" type="button" style="margin-left:1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
+                            </button>
+                            <button class="cc-button" type="button" style="margin-left:1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                            </button>
+                            <button class="cc-button cc-btn-submit" type="submit" style="margin-left:1rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13" fill="#fff"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./static/js/app.js"></script>
+</body>
+
+</html>
