@@ -773,6 +773,45 @@ header .right-sec {
     display: none;
 }
 
+.p-nav-t1 .s-icons {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+}
+.p-nav-t1 .s-icons li {
+    display: inline-block;
+    margin: 0 .55em;
+}
+.p-nav-t1 .s-icons li a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    -webkit-transition: all 150ms ease, -webkit-transform 150ms ease;
+    transition: all 150ms ease, -webkit-transform 150ms ease;
+    transition: transform 150ms ease, all 150ms ease;
+    transition: transform 150ms ease, all 150ms ease, -webkit-transform 150ms ease;
+}
+.p-nav-t1 .s-icons li a svg {
+    fill: #fff !important;
+    vertical-align: middle;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+.p-nav-t1 .s-icons li a:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    background: transparent;
+}
+.p-nav-t1 .s-icons li a:hover svg {
+    fill: var(--green) !important;
+}
+  
+
 .p-nav-t-active {
     display: block;
     animation: fade 1s;
