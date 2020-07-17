@@ -16,6 +16,8 @@
 </head>
 
 <body>
+
+    
     
     <!-- header section -->
     <header class="flex align-centre relative">
@@ -30,13 +32,13 @@
 
         <div class="flex right-sec"> 
             <div class="relative">
-                <a class="flex align-centre profile">
+                <a class="flex align-centre profile ">
                     <img src="./static/img/profile-2.jpg" alt="Shaiq Kar">
                     <span style="margin-left: .5rem;">Profile</span>
                 </a>
             </div>
             <div class="relative">
-                <a class="flex align-centre profile">
+                <a class="flex align-centre profile p-btn">
                     <span>Shaiq Kar</span>
                     <img src="./static/img/profile.jpg" alt="Shaiq Kar">
                 </a>
@@ -47,6 +49,8 @@
 
     <!-- main app part -->
     <main id="app" class="flex">
+
+        <div class="cover"></div>
 
         <div class="flex container">
             <!-- Chats sidebar -->
@@ -387,7 +391,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-smile"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
                             </button>
                         </div>
-                        <input type="text" placeholder="Write your message" class="input" style="padding: 6px 12px;">
+                        <input type="text" placeholder="Write your message" class="input" style="padding: 6px 12px;" id='msgBox'>
                         <div class="flex">
                             <button class="cc-button" type="button" style="margin-left:1rem;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-paperclip"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path></svg>
@@ -395,7 +399,7 @@
                             <button class="cc-button" type="button" style="margin-left:1rem;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
                             </button>
-                            <button class="cc-button cc-btn-submit" type="submit" style="margin-left:1rem;">
+                            <button class="cc-button cc-btn-submit" type="submit" style="margin-left:1rem;" id="msg-btn-submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13" fill="#fff"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                             </button>
                         </div>
@@ -406,6 +410,118 @@
 
         </div>
     </main>
+
+    <!-- Modals and sidebars -->
+    <div class="profile-sidebar">
+        
+        <div class="flex align-centre top-sec">
+            <span>Profile</span>
+            <div class="p-s-ts-btns">
+                <span class="ts-btn-item">
+                    <a href="#" class="btn-profile btn-p-light">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+                    </a>
+                </span>
+                <span class="ts-btn-item">
+                    <a class="btn-profile btn-p-d sidebar-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="ps-scroll">
+            <div class="profile-body">
+                <div class="t-centre">
+                    <img class="profile-img" src="./static/img/profile.jpg">
+                    <h5 style="margin-bottom: .25rem!important">Shaiq Kar</h5>
+                    <small class="t-m" style="font-style: italic;">Last Seen: Today</small>
+                    <nav class="flex j-centre p-nav tabs">
+                        <a class="p-nav-link p-nav-link-active" data-tab-id="tab1">About</a>
+                        <a class="p-nav-link" data-tab-id="tab2">Media</a>
+                    </nav>
+                </div>
+
+                <div class="p-nav-content p-nav-t1 p-nav-t-active" id="tab1">
+                    <div class="mt4 p-nav-item">
+                        <p class="mt4 t-m">Lorem ipsum is a pseudo-Latin text used in web design, typography,
+                            layout, and printing in place of English to emphasise design elements over content.
+                            It's also called placeholder (or filler) text. It's a convenient tool for
+                            mock-ups.
+                        </p>
+                        <div class="mt4 mb4">
+                            <h6>Phone</h6>
+                            <p class="t-m">700 634 3764</p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>City</h6>
+                            <p class="t-m">Srinagar / Banglore</p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>Website</h6>
+                            <p class="t-m"><a href="https://linkedin.com/in/shaiqkar" style="color:var(--green)">https://shaiqkar.dev</a></p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6>Connect with Me</h6>
+                            <p class="t-m"><a href="https://linkedin.com/in/shaiqkar" style="color:var(--green)">https://shaiqkar.dev</a></p>
+                        </div>
+                        <div class="mt4 mb4">
+                            <h6 class="mb4">Settings</h6>
+                            <div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Notifications</span>
+                                </div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Read Receipts</span>
+                                </div>
+                                <div class="sep flex align-centre">
+                                    <label class="checkbox">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <span style="margin-left: 1rem;" class="s-itm">Two-step verification</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-nav-content p-nav-t2" id="tab2">
+                    <h6 class="flex align-centre hd">
+                        <span>Recent Files</span>
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload mr-2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg> Upload
+                        </a>
+                    </h6>
+                    <ul>
+                        <li class="file-item">
+                            <img src="./static/img/icons/xlsx.svg">
+                            yaarme_report_1207.xlsx</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/docx.svg">
+                            projectDetails.docx</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/image.svg">
+                            prototype6372.jpg</li>
+                        <li class="file-item">
+                            <img src="./static/img/icons/pdf.svg">
+                            internship_report.pdf</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <script type="text/javascript" src="./static/js/app.js"></script>
 </body>
