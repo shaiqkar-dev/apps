@@ -28,14 +28,10 @@ var $ = (elem) => {
     tabs.addEventListener('click', function(e) {
 
         if (e.target && e.target.nodeName === 'A') {
-          // change tabs
           for (var i = 0; i < tab.length; i++) {
             tab[i].classList.remove('p-nav-link-active');
           }
           e.target.classList.toggle('p-nav-link-active');
-  
-  
-          // change content
           for (i = 0; i < contents.length; i++) {
             contents[i].classList.remove('p-nav-t-active');
           }
