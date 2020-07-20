@@ -191,9 +191,7 @@ img {
 
     .chats {
         padding: 0 1rem;
-        overflow: hidden;
         outline: none;
-        touch-action: none;
         flex: 1;
         overflow-y: scroll;
         position: sticky;
