@@ -15,7 +15,6 @@ body {
     background: #fff;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 img {
@@ -139,7 +138,6 @@ img {
     }
     .messages {
         align-items: flex-start;
-        overflow: hidden;
     }
 
     .messages .msg {
