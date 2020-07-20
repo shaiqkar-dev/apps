@@ -142,7 +142,7 @@ img {
 
     .messages .msg {
         max-width: 78%;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.6rem;
     }
     .msg img {
         margin-right: 1rem;
@@ -151,7 +151,7 @@ img {
     .msg-txt {
         background-color: #fff;
         border-radius: 1rem;
-        padding: .5rem .8rem;
+        padding: .7rem .9rem;
         border: 0.9px solid #ddd;
     }
     .msg-in {
@@ -175,6 +175,10 @@ img {
         font-weight: 400;
         width: 100%;
         margin-right: 0.5rem;
+    }
+    .chat-end {
+        width: 1px;
+        height: 3.2rem;
     }
     .chat-controls {
         padding: 1rem 1.5rem;
