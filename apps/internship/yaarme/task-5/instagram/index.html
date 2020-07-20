@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Chat</title>
+
+    <link rel="stylesheet" href="./static/app.css">
+
+</head>
+
+<body id="display-only-mobile">
+
+    <header class="flex ">
+
+        <div class="flex align-centre profile">
+            <div class="back hover">
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.008 512.008" style="enable-background:new 0 0 512.008 512.008;" xml:space="preserve" fill="currentColor">
+                    <path d="M501.342,245.185H36.424L210.227,71.404c4.093-4.237,3.975-10.99-0.262-15.083 c-4.134-3.992-10.687-3.992-14.82,0l-192,192c-4.171,4.16-4.179,10.914-0.019,15.085c0.006,0.006,0.013,0.013,0.019,0.019l192,192 c4.093,4.237,10.845,4.354,15.083,0.262c4.237-4.093,4.354-10.845,0.262-15.083c-0.086-0.089-0.173-0.176-0.262-0.262 L36.424,266.519h464.917c5.891,0,10.667-4.776,10.667-10.667S507.233,245.185,501.342,245.185z" />
+                    <path d="M202.675,458.519c-2.831,0.005-5.548-1.115-7.552-3.115l-192-192c-4.164-4.165-4.164-10.917,0-15.083l192-192 c4.237-4.093,10.99-3.975,15.083,0.262c3.992,4.134,3.992,10.687,0,14.82L25.758,255.852L210.206,440.3 c4.171,4.16,4.179,10.914,0.019,15.085C208.224,457.39,205.508,458.518,202.675,458.519z" />
+                    <path d="M501.342,266.519H10.675c-5.891,0-10.667-4.776-10.667-10.667s4.776-10.667,10.667-10.667h490.667 c5.891,0,10.667,4.776,10.667,10.667S507.233,266.519,501.342,266.519z" />
+                </svg>
+            </div>
+            <div class="flex align-centre cwith">
+                <img src="./static/img/pic.jpg" class="round hover">
+                <span class="t-bold hover">Akansha Singh</span>
+            </div>
+        </div>
+
+        <div class="vinfo flex align-centre">
+            <span class="hover">
+                <svg height="472pt" viewBox="0 -87 472 472" xmlns="http://www.w3.org/2000/svg"><path d="m467.101562 26.527344c-3.039062-1.800782-6.796874-1.871094-9.898437-.179688l-108.296875 59.132813v-35.480469c-.03125-27.601562-22.398438-49.96875-50-50h-248.90625c-27.601562.03125-49.96875 22.398438-50 50v197.421875c.03125 27.601563 22.398438 49.96875 50 50h248.90625c27.601562-.03125 49.96875-22.398437 50-50v-34.835937l108.300781 59.132812c3.097657 1.691406 6.859375 1.625 9.894531-.175781 3.039063-1.804688 4.898438-5.074219 4.898438-8.601563v-227.816406c0-3.53125-1.863281-6.796875-4.898438-8.597656zm-138.203124 220.898437c-.015626 16.5625-13.4375 29.980469-30 30h-248.898438c-16.5625-.019531-29.980469-13.4375-30-30v-197.425781c.019531-16.558594 13.4375-29.980469 30-30h248.90625c16.558594.019531 29.980469 13.441406 30 30zm123.101562-1.335937-103.09375-56.289063v-81.535156l103.09375-56.285156zm0 0"/></svg>
+            </span>
+            <span class="hover">
+                <svg aria-label="View Thread Details" class="_8-yf5 " fill="#262626" height="24" viewBox="0 0 48 48" width="24"><path d="M24 48C10.8 48 0 37.2 0 24S10.8 0 24 0s24 10.8 24 24-10.8 24-24 24zm0-45C12.4 3 3 12.4 3 24s9.4 21 21 21 21-9.4 21-21S35.6 3 24 3z"></path><circle clip-rule="evenodd" cx="24" cy="14.8" fill-rule="evenodd" r="2.6"></circle><path d="M27.1 35.7h-6.2c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5h6.2c.8 0 1.5.7 1.5 1.5s-.7 1.5-1.5 1.5z"></path><path d="M24 35.7c-.8 0-1.5-.7-1.5-1.5V23.5h-1.6c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5H24c.8 0 1.5.7 1.5 1.5v12.2c0 .8-.7 1.5-1.5 1.5z"></path></svg>
+            </span>
+        </div>
+    </header>
+
+    <main class="chat-body flex flex-c">
+        <div class="message-window">
+            <div class="messages flex flex-c">
+
+                <div class="msg flex align-centre">
+                    <img class="round" src="./static/img/pic.jpg">  
+                    <div class="msg-txt">
+                        Hello, how are you?
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                        I am fine
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre">  
+                    <div class="msg-txt">
+                        what about you
+                    </div>
+                </div>
+                <div class="msg msg-f flex align-centre">
+                    <div class="msg-txt">
+                        I am gud, thanks.
+                    </div>
+                </div>
+                <div class="msg msg-f flex align-centre">
+                    <div class="msg-txt">
+                        How is your startup going
+                    </div>
+                </div>
+                <div class="msg flex align-centre">
+                    <img class="round" src="./static/img/pic.jpg">  
+                    <div class="msg-txt">
+                        I heard that you got funding from US
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                        Ya, we managed to raise $10 M from Google
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                       They are really impressed from our project
+                    </div>
+                </div>
+                <div class="msg flex align-centre">
+                    <img class="round" src="./static/img/pic.jpg">  
+                    <div class="msg-txt">
+                       So, congrats
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                       Thanks
+                    </div>
+                </div>
+                <div class="msg msg-f flex align-centre"> 
+                    <div class="msg-txt">
+                       Ua wlcm 🙂
+                    </div>
+                </div>
+                <div class="msg msg-f flex align-centre">
+                    <div class="msg-txt">
+                        <img src="./static/img/image1.jpg"> 
+                    </div>
+                </div>
+                <div class="msg flex align-centre">
+                    <img class="round" src="./static/img/pic.jpg">  
+                    <div class="msg-txt">
+                        See this 👆
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                       Great News 👌 
+                    </div>
+                </div>
+                <div class="msg msg-in flex align-centre"> 
+                    <div class="msg-txt">
+                       Btw, how is you PHD going
+                    </div>
+                </div>
+                <div class="msg msg-f flex align-centre">
+                    <div class="msg-txt">
+                        Awesome
+                    </div>
+                </div>
+                <div class="msg flex align-centre">
+                    <img class="round" src="./static/img/pic.jpg">  
+                    <div class="msg-txt">
+                        Next week i had to present my thesis
+                    </div>
+                </div>
+                <div class="msg msg-in flex flex-c align-centre"> 
+                    <div class="msg-txt">
+                       Best of Luck 👍
+                    </div>
+                    <div class="msg-status">
+                        <small>Seen</small>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+        <div class="chat-controls">
+            <span class="camera-icon hover">
+                <svg  enable-background="new 0 0 488.455 488.455" fill="#fff" viewBox="0 0 488.455 488.455"  xmlns="http://www.w3.org/2000/svg"><path d="m287.396 216.317c23.845 23.845 23.845 62.505 0 86.35s-62.505 23.845-86.35 0-23.845-62.505 0-86.35 62.505-23.845 86.35 0"/><path d="m427.397 91.581h-42.187l-30.544-61.059h-220.906l-30.515 61.089-42.127.075c-33.585.06-60.925 27.429-60.954 61.029l-.164 244.145c0 33.675 27.384 61.074 61.059 61.074h366.338c33.675 0 61.059-27.384 61.059-61.059v-244.236c-.001-33.674-27.385-61.058-61.059-61.058zm-183.177 290.029c-67.335 0-122.118-54.783-122.118-122.118s54.783-122.118 122.118-122.118 122.118 54.783 122.118 122.118-54.783 122.118-122.118 122.118z"/></svg>
+            </span>
+
+            <div class="msg-input">
+                <input type="text" placeholder="Message...">
+            </div>
+
+            <div class="act-icons">
+
+                <span>
+                    <svg  enable-background="new 0 0 512 512"  viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><g><path d="m361 190v-85c0-57.897-47.103-105-105-105s-105 47.103-105 105v85h-60v50c0 85.925 66.023 156.707 150 164.311v77.689h-60v30h150v-30h-60v-77.689c83.978-7.604 150-78.386 150-164.311v-50zm-105-160c39.674 0 72.23 30.97 74.815 70h-44.815v30h45v30h-45v30h45v30h-45v30h44.314c-4.906 36.642-36.351 65-74.314 65s-69.407-28.358-74.314-65h44.314v-30h-45v-30h45v-30h-45v-30h45v-30h-44.814c2.584-39.03 35.14-70 74.814-70zm135 210c0 74.44-60.56 135-135 135s-135-60.56-135-135v-20h30v20c0 57.897 47.102 105 105 105s105-47.103 105-105v-20h30z"/></g></svg>
+                </span>
+                <span>
+                    <svg fill="currentColor" viewBox="0 0 48 48"><path d="M38.5 0h-29C4.3 0 0 4.3 0 9.5v29C0 43.7 4.3 48 9.5 48h29c5.2 0 9.5-4.3 9.5-9.5v-29C48 4.3 43.7 0 38.5 0zM45 38.5c0 3.6-2.9 6.5-6.5 6.5h-29c-3.3 0-6-2.5-6.4-5.6l8.3-8.3c.1-.1.3-.2.4-.2.1 0 .2 0 .4.2l6.3 6.3c1.4 1.4 3.6 1.4 5 0L35.9 25c.2-.2.6-.2.8 0l8.3 8.3v5.2zm0-9.4l-6.2-6.2c-1.3-1.3-3.7-1.3-5 0L21.3 35.3c-.1.1-.3.2-.4.2-.1 0-.2 0-.4-.2L14.2 29c-1.3-1.3-3.7-1.3-5 0L3 35.2V9.5C3 5.9 5.9 3 9.5 3h29C42.1 3 45 5.9 45 9.5v19.6zM11.8 8.2c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"></path></svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 348.106V80c0-26.51-21.49-48-48-48H48C21.49 32 0 53.49 0 80v351.988c0 26.51 21.49 48 48 48h268.118a48 48 0 0 0 33.941-14.059l83.882-83.882A48 48 0 0 0 448 348.106zm-128 80v-76.118h76.118L320 428.106zM400 80v223.988H296c-13.255 0-24 10.745-24 24v104H48V80h352z"></path></svg>
+                </span>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

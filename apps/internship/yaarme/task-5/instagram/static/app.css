@@ -1,0 +1,242 @@
+:root {
+    font-size: 16px;
+
+    --shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+}
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #000;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+#display-only-mobile {
+    display: none;
+}
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-c {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.align-centre {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.round {
+    border-radius: 50% !important;
+}
+
+.t-bold {
+    font-weight: 700;
+}
+.hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+    #display-only-mobile {
+        display: block;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3rem;
+        box-shadow: var(--shadow);
+        justify-content: flex-start;
+        z-index: 10;
+    }
+
+    header .profile {
+        margin-left: 1rem;
+    }
+    .profile .back svg {
+        width: 1rem;
+        fill: #000;
+    }
+    .profile .cwith {
+        margin-left: 1rem;
+    }
+    .cwith img {
+        width: 2rem;
+    }
+    .cwith span {
+        margin-left: 1rem;
+    }
+    header .vinfo {
+        margin-left: auto;
+        padding: 0 1rem;
+    }
+    .vinfo svg {
+        width: 1.25rem;
+        fill: #000;
+    }
+    .vinfo span {
+        padding: 0 .5rem;
+    }
+
+    .chat-body {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: calc(100vh - 3rem);
+        width: 100%;
+        position: relative;
+        top: 3rem;
+        overflow: hidden;
+    }
+
+    .message-window {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        padding: 1rem;
+        position: static;
+        overflow-y: scroll;
+    }
+    .message-window::-webkit-scrollbar {
+        display: none;
+    }
+    .messages {
+        align-items: flex-start;
+    }
+
+    .messages .msg {
+        max-width: 78%;
+        margin-bottom: 0.5rem;
+    }
+    .msg img {
+        margin-right: 1rem;
+        width: 1.8rem;
+    }
+    .msg-txt {
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: .5rem .8rem;
+        border: 0.9px solid #ddd;
+    }
+    .msg-in {
+        margin-left: auto;
+    }
+    .msg-in .msg-txt {
+        background: #ddd;
+    }
+    .msg-f .msg-txt {
+        margin-left: 2.8rem;
+    }
+    .msg-txt  img {
+        width: 200px;
+        max-width: 200px;
+        margin-right: 0;
+        border-radius: 0.25rem;
+    }
+    .msg .msg-status {
+        text-align: right;
+        color: #828282;
+        font-weight: 400;
+        width: 100%;
+        margin-right: 0.5rem;
+    }
+
+    .chat-controls {
+        padding: 1rem 1.5rem;
+    }
+    .chat-controls {
+        position: relative;
+    }
+
+    .msg-input input[type=text] {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.8rem 1rem;
+        padding-left: 3rem;
+        padding-right: 6rem;
+        border: 0;
+        outline: 0;
+        line-height: 1.2;
+        border: 1px solid #ddd;
+        border-radius: 2rem;
+    }
+
+    .chat-controls .camera-icon {
+        position: absolute;
+        left: 2rem;
+        top:50%;
+        transform: translateY(-50%);
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #56CCF2;  
+        background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);
+        background: linear-gradient(to bottom, #2F80ED, #56CCF2); 
+    }
+    .chat-controls svg {
+        width: 1rem;
+    }
+
+    .act-icons {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top:50%;
+        transform: translateY(-50%);
+        right: 2rem;
+    }
+    .act-icons span {
+        padding: 0 .3rem;
+        cursor: pointer;
+    }
+    .act-icons svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: #262626;
+        filter: brightness(1.2);
+    }
+
+
+
+}
+
+
+
