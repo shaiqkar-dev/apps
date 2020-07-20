@@ -150,7 +150,7 @@ img {
     }
     .msg-txt {
         background-color: #fff;
-        border-radius: 1rem;
+        border-radius: 1.3rem;
         padding: .7rem .9rem;
         border: 0.9px solid #ddd;
     }
@@ -178,10 +178,10 @@ img {
     }
     .chat-end {
         width: 1px;
-        height: 3.2rem;
+        height: 3rem;
     }
     .chat-controls {
-        padding: 1rem 1.5rem;
+        padding: 0.6rem 1.5rem;
         position: fixed;
         background: #fff;
         bottom: 0;
