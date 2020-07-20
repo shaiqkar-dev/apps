@@ -138,6 +138,7 @@ img {
     }
     .messages {
         align-items: flex-start;
+        overflow: hidden;
     }
 
     .messages .msg {
