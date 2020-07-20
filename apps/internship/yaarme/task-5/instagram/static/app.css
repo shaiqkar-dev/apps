@@ -78,7 +78,8 @@ img {
         height: 3rem;
         box-shadow: var(--shadow);
         justify-content: flex-start;
-        z-index: 10;
+        z-index: 100;
+        background: #fff;
     }
 
     header .profile {
@@ -175,12 +176,14 @@ img {
         width: 100%;
         margin-right: 0.5rem;
     }
-
     .chat-controls {
         padding: 1rem 1.5rem;
-    }
-    .chat-controls {
-        position: relative;
+        position: fixed;
+        background: #fff;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 50;
     }
 
     .msg-input input[type=text] {
