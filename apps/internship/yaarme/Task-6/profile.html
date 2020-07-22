@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0077B5">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Linkedin | Profile</title>
+
+    <!-- favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./static/img/favicon-16x16.png">
+
+    <!-- Css -->
+    <link rel="stylesheet" type="text/css" href="./static/css/styles.css" >
+    <link rel="stylesheet" type="text/css" href="./static/css/profile.css" >
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="nav-container">
+
+            <div class="nav-secondary">
+
+                <div class="mobile-only">
+                    <a href="#" class="nav-item nav-profile-item" id="sidebar-btn">
+                        <img width="50" height="50" alt="shaiq kar" class="nav-profile-img" src="./static/img/nav-profile-icon.jpg">
+                        <div class="mobile-nav-badge">
+                            <svg height="10px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="10px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" style="fill: #0077B5"/></svg>
+                        </div>
+                    </a>
+                    <div class="mobile-sidebar" id="sidenav-mobile">
+                        <div class="ms-top-sec">
+                            <div class="ms-ts-top">
+                                <img width="30" height="30" alt="shaiq kar" class="ms-pimg" src="./static/img/nav-profile-icon.jpg" alt="Shaiq Kar">
+                                <img src="./static/img/sidebar/moon.svg" class="ms-ts-top-switch" alt="Moon">
+                            </div>
+                            <div class="ms-ts-bottom">
+                                <span>
+                                    <span class="text-bold hoverable">Shaiq Iqbal Kar</span></br>
+                                    <span class="text-small">+91 7006343764</span>
+                                </span>
+                                <span class="ms-drop hoverable">
+                                    <img src="./static/img/sidebar/arrow.svg" alt="Drop Cap" id="drop-nav-btn">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="ms-drop-nav" id="drop-nav">
+                            <a href="#" class="ms-drop-item ms-drop-profile">
+                                <img alt="shaiq kar" src="./static/img/nav-profile-icon.jpg">
+                                <span class="text-bold">Shaiq Iqbal Kar</span>
+                            </a>
+                            <a href="#" class="ms-drop-item">
+                                <img src="./static/img/sidebar/plus.svg" style="width:1.5rem">
+                                <span class="text-bold">Add Account</span>
+                            </a>
+                        </div>
+                        <div class="ms-nav">
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/users.svg">
+                                <span class="text-bold">New Group</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/lock.svg">
+                                <span class="text-bold">New Secret Chat</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/megaphone.svg">
+                                <span class="text-bold">New Channel</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/user.svg">
+                                <span class="text-bold">Contacts</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/phone.svg">
+                                <span class="text-bold">Calls</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/bookmark.svg">
+                                <span class="text-bold">Saved Messages</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/settings.svg">
+                                <span class="text-bold">Settings</span>
+                            </a>
+                            <span class="ms-nav-break"></span>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/user-plus.svg">
+                                <span class="text-bold">Invite Friends</span>
+                            </a>
+                            <a class="ms-nav-item">
+                                <img src="./static/img/sidebar/faq.svg">
+                                <span class="text-bold">Linkedin FAQ</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="./static/img/linkedin-icon.svg">
+                    </a>
+                </div>
+                
+                <div class="search-holder">
+                    <form class="search-form">
+
+                        <div class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                <path d="M21 19.67l-5.44-5.44a7 7 0 10-1.33 1.33L19.67 21zm-11-4.54A5.13 5.13 0 1115.13 10 5.13 5.13 0 0110 15.13z"></path>
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Search" class="search-box">
+                    </form>
+                </div>
+
+                <div class="mobile-only">
+                    <a href="#" class="nav-item ">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8Zm-4,8H12V15h5Zm1-3H11V12h7ZM17,4V6H6A1,1,0,0,0,5,7v8H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16A1,1,0,0,1,17,4Z" class="pri-item" style="fill-opacity: 1"></path><path d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8ZM20,19.11L18.52,18H9V10H20v9.11ZM12,15h5v1H12V15ZM4,13H5v2H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16a1,1,0,0,1,1,1V6H15V5H4v8Zm14,0H11V12h7v1Z" class="sec-item" style="fill: #fff"></path></svg>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="nav-primary hoverable">
+
+                <a href="#" class="nav-item ">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M22,9.45,12.85,3.26A1.52,1.52,0,0,0,12,3a1.49,1.49,0,0,0-.84.26L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h5V16h4v5h5a1,1,0,0,0,1-1V10.37l.94.63Z" class="pri-item" style="fill-opacity: 1"></path><path d="M22,9.45L12.85,3.26a1.5,1.5,0,0,0-1.69,0L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h6V16h2v5h6a1,1,0,0,0,1-1V10.37L20.94,11ZM18,19H15V15a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1v4H6V8.89l6-4,6,4V19Z" class="sec-item" style="fill: currentColor"></path></svg>
+                    <span class="nav-item-id">Home</span>
+                </a>
+            
+                <a href="#" class="nav-item ">
+                    <span class="nav-item-badge">3</span>
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M16,17.85V20a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V17.85a4,4,0,0,1,2.55-3.73l2.95-1.2V11.71l-0.73-1.3A6,6,0,0,1,4,7.47V6a4,4,0,0,1,4.39-4A4.12,4.12,0,0,1,12,6.21V7.47a6,6,0,0,1-.77,2.94l-0.73,1.3v1.21l2.95,1.2A4,4,0,0,1,16,17.85Zm4.75-3.65L19,13.53v-1a6,6,0,0,0,1-3.31V9a3,3,0,0,0-6,0V9.18a6,6,0,0,0,.61,2.58A3.61,3.61,0,0,0,16,13a3.62,3.62,0,0,1,2,3.24V21h4a1,1,0,0,0,1-1V17.47A3.5,3.5,0,0,0,20.75,14.2Z" class="pri-item" style="fill-opacity: 1"></path><path d="M20.74,14.2L19,13.54V12.86l0.25-.41A5,5,0,0,0,20,9.82V9a3,3,0,0,0-6,0V9.82a5,5,0,0,0,.75,2.63L15,12.86v0.68l-1,.37a4,4,0,0,0-.58-0.28l-2.45-1V10.83A8,8,0,0,0,12,7V6A4,4,0,0,0,4,6V7a8,8,0,0,0,1,3.86v1.84l-2.45,1A4,4,0,0,0,0,17.35V20a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V17.47A3.5,3.5,0,0,0,20.74,14.2ZM16,8.75a1,1,0,0,1,2,0v1.44a3,3,0,0,1-.38,1.46l-0.33.6a0.25,0.25,0,0,1-.22.13H16.93a0.25,0.25,0,0,1-.22-0.13l-0.33-.6A3,3,0,0,1,16,10.19V8.75ZM6,5.85a2,2,0,0,1,4,0V7.28a6,6,0,0,1-.71,2.83L9,10.72a1,1,0,0,1-.88.53H7.92A1,1,0,0,1,7,10.72l-0.33-.61A6,6,0,0,1,6,7.28V5.85ZM14,19H2V17.25a2,2,0,0,1,1.26-1.86L7,13.92v-1a3,3,0,0,0,1,.18H8a3,3,0,0,0,1-.18v1l3.72,1.42A2,2,0,0,1,14,17.21V19Zm7,0H16V17.35a4,4,0,0,0-.55-2l1.05-.4V14.07a2,2,0,0,0,.4.05h0.2a2,2,0,0,0,.4-0.05v0.88l2.53,1a1.5,1.5,0,0,1,1,1.4V19Z" class="sec-item" style="fill: currentColor"></path></svg>
+                    <span class="nav-item-id">My Network</span>
+                </a>
+            
+                <a href="#" class="nav-item ">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M2,13H22v6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V13ZM22,8v4H2V8A1,1,0,0,1,3,7H7V6a3,3,0,0,1,3-3h4a3,3,0,0,1,3,3V7h4A1,1,0,0,1,22,8ZM15,6a1,1,0,0,0-1-1H10A1,1,0,0,0,9,6V7h6V6Z" class="pri-item" style="fill-opacity: 1"></path><path d="M21,7H17V6a3,3,0,0,0-3-3H10A3,3,0,0,0,7,6V7H3A1,1,0,0,0,2,8V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8A1,1,0,0,0,21,7ZM9,6a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V7H9V6ZM20,18H4V13H20v5Zm0-6H4V9H20v3Z" class="sec-item" style="fill: currentColor"></path></svg>
+                    <span class="nav-item-id">Jobs</span>
+                </a>
+            
+                <a href="#" class="nav-item ">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8Zm-4,8H12V15h5Zm1-3H11V12h7ZM17,4V6H6A1,1,0,0,0,5,7v8H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16A1,1,0,0,1,17,4Z" class="pri-item" style="fill-opacity: 1"></path><path d="M21,8H8A1,1,0,0,0,7,9V19a1,1,0,0,0,1,1H18l4,3V9A1,1,0,0,0,21,8ZM20,19.11L18.52,18H9V10H20v9.11ZM12,15h5v1H12V15ZM4,13H5v2H3a1,1,0,0,1-1-1V4A1,1,0,0,1,3,3H16a1,1,0,0,1,1,1V6H15V5H4v8Zm14,0H11V12h7v1Z" class="sec-item" style="fill: currentColor"></path></svg>
+                    <span class="nav-item-id">Messaging</span>
+                </a>
+            
+                <a href="#" class="nav-item ">
+                    <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.94,14H5.06L5.79,8.44A6.26,6.26,0,0,1,12,3h0a6.26,6.26,0,0,1,6.21,5.44Zm2,5-1.71-4H4.78L3.06,19a0.71,0.71,0,0,0-.06.28,0.75,0.75,0,0,0,.75.76H10a2,2,0,1,0,4,0h6.27A0.74,0.74,0,0,0,20.94,19Z" class="pri-item" style="fill-opacity: 1"></path><path d="M20.94,19L19,14.49s-0.41-3.06-.8-6.06A6.26,6.26,0,0,0,12,3h0A6.26,6.26,0,0,0,5.79,8.44L5,14.49,3.06,19a0.71,0.71,0,0,0-.06.28,0.75,0.75,0,0,0,.75.76H10a2,2,0,1,0,4,0h6.27A0.74,0.74,0,0,0,20.94,19ZM12,4.75h0a4.39,4.39,0,0,1,4.35,3.81c0.28,2.1.56,4.35,0.7,5.44H7L7.65,8.56A4.39,4.39,0,0,1,12,4.75ZM5.52,18l1.3-3H17.18l1.3,3h-13Z" class="sec-item" style="fill: currentColor"></path></svg>
+                    <span class="nav-item-id">Notifications</span>
+                </a>
+            
+                <a href="#" class="nav-item nav-profile-item">
+                    <img width="30" height="30" alt="shaiq kar" class="nav-profile-img" src="./static/img/nav-profile-icon.jpg">
+                </a>
+            
+                <a href="#" class="nav-item nav-item-work-c">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false"><path d="M10 10h4v4h-4v-4zm0 11h4v-4h-4v4zm-7-7h4v-4H3v4zm0 7h4v-4H3v4zM3 7h4V3H3v4zm14 7h4v-4h-4v4zm0-11v4h4V3h-4zm-7 4h4V3h-4v4zm7 14h4v-4h-4v4z"></path></svg>
+                    <span class="nav-item-id nav-item-work">
+                        Work
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="currentColor" width="16" height="16" focusable="false">
+                            <path d="M8.8 10.66L14 5.12a.07.07 0 00-.07-.12H2.07a.07.07 0 00-.07.12l5.2 5.54a1.1 1.1 0 001.6 0z"></path>
+                        </svg>
+                    </span>
+                </a>
+            
+                <a href="#" class="nav-item">
+                    <span class="nav-item-id nav-item-premium">Try Premium Free for 1 Month</span>
+                </a>
+                
+            </div>  
+        </div>
+    </header>
+    <!-- Mobile Bottom Menu -->
+    <div class="mobile-only">
+        <div class="mobile-menu ">
+            <a class="mobile-nav-item hoverable">
+                <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M22,9.45,12.85,3.26A1.52,1.52,0,0,0,12,3a1.49,1.49,0,0,0-.84.26L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h5V16h4v5h5a1,1,0,0,0,1-1V10.37l.94.63Z" class="active-nav" style="fill-opacity: 1"></path><path d="M22,9.45L12.85,3.26a1.5,1.5,0,0,0-1.69,0L2,9.45,3.06,11,4,10.37V20a1,1,0,0,0,1,1h6V16h2v5h6a1,1,0,0,0,1-1V10.37L20.94,11ZM18,19H15V15a1,1,0,0,0-1-1H10a1,1,0,0,0-1,1v4H6V8.89l6-4,6,4V19Z" class="active-nav" style="fill: currentColor"></path></svg>
+            </a>
+            <a class="mobile-nav-item hoverable">
+                <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M16,17.85V20a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V17.85a4,4,0,0,1,2.55-3.73l2.95-1.2V11.71l-0.73-1.3A6,6,0,0,1,4,7.47V6a4,4,0,0,1,4.39-4A4.12,4.12,0,0,1,12,6.21V7.47a6,6,0,0,1-.77,2.94l-0.73,1.3v1.21l2.95,1.2A4,4,0,0,1,16,17.85Zm4.75-3.65L19,13.53v-1a6,6,0,0,0,1-3.31V9a3,3,0,0,0-6,0V9.18a6,6,0,0,0,.61,2.58A3.61,3.61,0,0,0,16,13a3.62,3.62,0,0,1,2,3.24V21h4a1,1,0,0,0,1-1V17.47A3.5,3.5,0,0,0,20.75,14.2Z" class="m-pri-item" style="fill-opacity: 1"></path><path d="M20.74,14.2L19,13.54V12.86l0.25-.41A5,5,0,0,0,20,9.82V9a3,3,0,0,0-6,0V9.82a5,5,0,0,0,.75,2.63L15,12.86v0.68l-1,.37a4,4,0,0,0-.58-0.28l-2.45-1V10.83A8,8,0,0,0,12,7V6A4,4,0,0,0,4,6V7a8,8,0,0,0,1,3.86v1.84l-2.45,1A4,4,0,0,0,0,17.35V20a1,1,0,0,0,1,1H22a1,1,0,0,0,1-1V17.47A3.5,3.5,0,0,0,20.74,14.2ZM16,8.75a1,1,0,0,1,2,0v1.44a3,3,0,0,1-.38,1.46l-0.33.6a0.25,0.25,0,0,1-.22.13H16.93a0.25,0.25,0,0,1-.22-0.13l-0.33-.6A3,3,0,0,1,16,10.19V8.75ZM6,5.85a2,2,0,0,1,4,0V7.28a6,6,0,0,1-.71,2.83L9,10.72a1,1,0,0,1-.88.53H7.92A1,1,0,0,1,7,10.72l-0.33-.61A6,6,0,0,1,6,7.28V5.85ZM14,19H2V17.25a2,2,0,0,1,1.26-1.86L7,13.92v-1a3,3,0,0,0,1,.18H8a3,3,0,0,0,1-.18v1l3.72,1.42A2,2,0,0,1,14,17.21V19Zm7,0H16V17.35a4,4,0,0,0-.55-2l1.05-.4V14.07a2,2,0,0,0,.4.05h0.2a2,2,0,0,0,.4-0.05v0.88l2.53,1a1.5,1.5,0,0,1,1,1.4V19Z" class="m-sec-item" style="fill: currentColor"></path></svg>
+            </a>
+            <a class="mobile-nav-item hoverable">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false"><path d="M17 13.75l2-2V20a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1h8.25l-2 2H5v12h12v-5.25zm5-8a1 1 0 01-.29.74L13.15 15 7 17l2-6.15 8.55-8.55a1 1 0 011.41 0L21.71 5a1 1 0 01.29.71zm-4.07 1.83l-1.5-1.5-6.06 6.06 1.5 1.5zm1.84-1.84l-1.5-1.5-1.18 1.17 1.5 1.5z" class="m-sec-item"></path></svg>
+            </a>
+            <a class="mobile-nav-item hoverable">
+                <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M18.94,14H5.06L5.79,8.44A6.26,6.26,0,0,1,12,3h0a6.26,6.26,0,0,1,6.21,5.44Zm2,5-1.71-4H4.78L3.06,19a0.71,0.71,0,0,0-.06.28,0.75,0.75,0,0,0,.75.76H10a2,2,0,1,0,4,0h6.27A0.74,0.74,0,0,0,20.94,19Z" class="m-pri-item" style="fill-opacity: 1"></path><path d="M20.94,19L19,14.49s-0.41-3.06-.8-6.06A6.26,6.26,0,0,0,12,3h0A6.26,6.26,0,0,0,5.79,8.44L5,14.49,3.06,19a0.71,0.71,0,0,0-.06.28,0.75,0.75,0,0,0,.75.76H10a2,2,0,1,0,4,0h6.27A0.74,0.74,0,0,0,20.94,19ZM12,4.75h0a4.39,4.39,0,0,1,4.35,3.81c0.28,2.1.56,4.35,0.7,5.44H7L7.65,8.56A4.39,4.39,0,0,1,12,4.75ZM5.52,18l1.3-3H17.18l1.3,3h-13Z" class="m-sec-item" style="fill: currentColor"></path></svg>      
+            </a>
+            <a class="mobile-nav-item hoverable">
+                <svg viewBox="0 0 24 24" width="24px" height="24px" x="0" y="0" preserveAspectRatio="xMinYMin meet" class="nav-icon" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M2,13H22v6a1,1,0,0,1-1,1H3a1,1,0,0,1-1-1V13ZM22,8v4H2V8A1,1,0,0,1,3,7H7V6a3,3,0,0,1,3-3h4a3,3,0,0,1,3,3V7h4A1,1,0,0,1,22,8ZM15,6a1,1,0,0,0-1-1H10A1,1,0,0,0,9,6V7h6V6Z" class="m-pri-item" style="fill-opacity: 1"></path><path d="M21,7H17V6a3,3,0,0,0-3-3H10A3,3,0,0,0,7,6V7H3A1,1,0,0,0,2,8V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V8A1,1,0,0,0,21,7ZM9,6a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1V7H9V6ZM20,18H4V13H20v5Zm0-6H4V9H20v3Z" class="m-sec-item" style="fill: currentColor"></path></svg>     
+            </a>
+        </div>
+    </div>
+    <!-- /Mobile Menu -->
+
+    <main class="app">
+
+        <div class="profile-container">
+
+           <div class="p-lsec flex flex-c">
+               <div class="p-lsec-h flex flex-c">
+                    <div class="pl-header-bg">
+                        <div class="pl-header-bg-pimg flex align-centre">
+                            <img src="./static/img/nav-profile-icon.jpg" class="round">
+                        </div>
+                    </div>
+                    <div class="pl-info flex flex-c">
+                        <h1>Shaiq Kar</h1>
+                        <p>AWS, Deep Learning, Python 💥</p>
+                        <p>Bengaluru, Karnataka, India</p>
+                    </div>
+                </div>
+               <div class="about-me-sec">
+                    <div class="p-lsec-h psp flex flex-c">
+                        <h2 class="t-head flex">About
+                            <span class="hover edit-btn"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false">
+                                    <path d="M21.71 5L19 2.29a1 1 0 00-.71-.29 1 1 0 00-.7.29L4 15.85 2 22l6.15-2L21.71 6.45a1 1 0 00.29-.74 1 1 0 00-.29-.71zM6.87 18.64l-1.5-1.5L15.92 6.57l1.5 1.5zM18.09 7.41l-1.5-1.5 1.67-1.67 1.5 1.5z"></path>
+                                </svg>
+                            </span>
+                        </h2>
+                        <p class="m1 t-sm">
+                            Out of the box. Experience with industry leading technologies - Python, Deep Learning, AWS, Scala & more. 
+                            Passion for innovation and prototyping. Competitive programmer - Codechef, Google Kick start.
+                        </p>
+                    </div>
+               </div>
+
+           </div>
+
+           <div class="p-rsec">
+                <div class="p-lsec-h flex flex-c psm">
+                    <div class="u-info">
+                        <ul class="user-info">
+                            <li>
+                                29.5 K
+                                <span>Friends</span>
+                            </li>
+                            <li>
+                                50 
+                                <span>Posts</span>
+                            </li>
+                            <li>
+                                9.3 K 
+                                <span>Reach</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="t-head m1">Work & Experience</span>
+                    <ul class="edu flex flex-c hover">
+                        <li class="edu-sc flex">
+                            <div class="edu-img">
+                                <img src="./static/img/work1.png">
+                            </div>
+                            <div class="edu-details flex flex-c">
+                                <span class="t-head-sm">Google</span>
+                                <span class="t-sm">Machine Learning Scientist</span>
+                                <span class="t-sm t-m">2020 - Present</span>                                    
+                            </div>
+                        </li>
+                        <li class="edu-sc flex">
+                            <div class="edu-img">
+                                <img src="./static/img/work2.png">
+                            </div>
+                            <div class="edu-details flex flex-c">
+                                <span class="t-head-sm">Microsoft</span>
+                                <span class="t-sm">CTO Azure AI Labs</span>
+                                <span class="t-sm t-m">2018 – 2020</span>                                    
+                            </div>
+                        </li>
+                        <li class="edu-sc flex">
+                            <div class="edu-img">
+                                <img src="./static/img/work3.png">
+                            </div>
+                            <div class="edu-details flex flex-c">
+                                <span class="t-head-sm">Apple</span>
+                                <span class="t-sm">Sr. Software Engineer</span>
+                                <span class="t-sm t-m">2015 – 2018</span>                                    
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="p-contact flex flex-c">
+                        <span class="dib m1 t-head">Contact</span>
+                        <span class="flex t-m" style="padding-top: 0.3rem;">Website<a href="http://linkedin.com/in/shaiqkar"  style="color: #0077B5;margin-left: 1rem;">https://shaiq.dev</a></span>
+                        <span class="flex t-m" style="padding-top: 0.3rem;">Email<a href="mailto:shaiqkar@gmail.com"  style="color: #0077B5;margin-left: 2.1rem;">hello@shaiqkar.dev</a></span>
+                        <ul class="social-icons flex m2"> 
+                            <li>
+                                <a href="#" class="ig">
+                                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" fill="currentColor">
+                                        <path d="M72.402,0H27.595C12.379,0,0,12.381,0,27.597v44.809C0,87.619,12.379,100,27.595,100h44.807C87.621,100,100,87.619,100,72.406V27.597C100,12.381,87.621,0,72.402,0z M88.691,71.078c0,9.711-7.902,17.613-17.615,17.613H28.923c-9.712,0-17.613-7.902-17.613-17.613V28.926c0-9.715,7.901-17.618,17.613-17.618h42.153c9.713,0,17.615,7.903,17.615,17.618V71.078z M50.001,26.779c-12.804,0-23.22,10.426-23.22,23.22c0,12.804,10.416,23.22,23.22,23.22c12.801,0,23.217-10.416,23.217-23.22C73.219,37.205,62.803,26.779,50.001,26.779z M50.001,63.689c-7.548,0-13.688-6.139-13.688-13.691c0-7.545,6.14-13.684,13.688-13.684c7.545,0,13.686,6.139,13.686,13.684C63.688,57.551,57.547,63.689,50.001,63.689z M75.658,17.864c-1.711,0-4.383,0.724-5.711,2.056c-1.332,1.328-2.098,3.178-2.098,5.065c0,1.882,0.766,3.727,2.098,5.063c1.326,1.325,3.172,2.098,5.051,2.098c1.885,0,3.723-0.772,5.055-2.098c1.332-1.336,2.094-3.184,2.094-5.063c0-1.888-0.762-3.737-2.094-5.065C78.729,18.587,77.373,17.864,75.658,17.864z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="tw">
+                                    <svg  viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet" fill="currentColor">
+                                        <path d="M18,3.617c-0.675,0.322-1.351,0.43-2.139,0.537c0.788-0.43,1.351-1.076,1.576-1.937c-0.675,0.43-1.463,0.646-2.362,0.861C14.399,2.431,13.388,2,12.375,2c-1.912,0-3.601,1.617-3.601,3.554c0,0.323,0,0.538,0.113,0.754C5.851,6.2,3.038,4.8,1.238,2.646C0.9,3.185,0.788,3.724,0.788,4.478c0,1.184,0.675,2.261,1.688,2.907c-0.563,0-1.125-0.216-1.688-0.431l0,0c0,1.723,1.237,3.122,2.925,3.446c-0.338,0.107-0.675,0.107-1.013,0.107c-0.225,0-0.45,0-0.675-0.107c0.45,1.399,1.8,2.476,3.487,2.476C4.274,13.846,2.7,14.384,0.9,14.384c-0.338,0-0.563,0-0.9,0C1.688,15.354,3.601,16,5.625,16c6.75,0,10.462-5.385,10.462-10.015c0-0.108,0-0.323,0-0.431C16.875,5.016,17.549,4.371,18,3.617z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="fb">
+                                    <svg  viewBox="0 0 18 18" preserveAspectRatio="xMinYMin meet" fill="currentColor">
+                                        <path d="M16.313,18h-4.504v-6.192h3.087V8.671h-3.087V7.135V6.831V6.814l0,0c0.01-0.328,0.277-0.591,0.607-0.591h0.067h1.113h1.62V3.086h-2.733l0,0l-0.009,0.018h-0.092c-2.051,0-3.712,1.661-3.712,3.711v0.911v0.945H6.191v3.137h2.479V18H1.687C0.755,18,0,17.242,0,16.313V1.686C0,0.754,0.755,0,1.687,0h14.626C17.244,0,18,0.754,18,1.686v14.627C18,17.242,17.244,18,16.313,18z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="yt">
+                                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMinYMin meet" fill="currentColor">
+                                        <path d="M97.911,24.557c-1.149-4.549-4.538-8.13-8.842-9.347C81.271,13,49.999,13,49.999,13s-31.271,0-39.07,2.21c-4.302,1.216-7.69,4.798-8.84,9.347C0,32.8,0,50.001,0,50.001s0,17.2,2.089,25.443c1.15,4.549,4.538,8.132,8.84,9.348C18.729,87,49.999,87,49.999,87s31.271,0,39.07-2.208c4.304-1.216,7.692-4.799,8.842-9.348C100,67.201,100,50.001,100,50.001S100,32.8,97.911,24.557z M39.999,65.858V34.144L65.98,50.001L39.999,65.858z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+           </div>
+
+           <div class="acheivements flex flex-c" >
+                <div class="p-lsec-h flex flex-c psm">
+                    <span class="t-head m1">Education</span>
+                    <ul class="edu flex flex-c hover">
+                        <li class="edu-sc flex">
+                            <div class="edu-img">
+                                <img src="./static/img/edu2.png">
+                            </div>
+                            <div class="edu-details flex flex-c">
+                                <span class="t-head-sm">IIT Bombay</span>
+                                <span class="t-sm">Master's degree, Computer Science</span>
+                                <span class="t-sm t-m">2023-2025</span>                                    
+                            </div>
+                        </li>
+                        <li class="edu-sc flex">
+                            <div class="edu-img">
+                                <img src="./static/img/edu1.png">
+                            </div>
+                            <div class="edu-details flex flex-c">
+                                <span class="t-head-sm">Presidency University</span>
+                                <span class="t-sm">Bachelor's degree, Computer Science</span>
+                                <span class="t-sm t-m">2018 – 2022</span>                                    
+                            </div>
+                        </li>
+                    </ul>
+                    <span class="t-head m1">Skills</span>
+                    <ul class="skills flex flex-c hover">
+                        <li class="skill flex align-centre">
+                            <div class="skill-img flex align-centre">
+                                <img src="./static/img/python.svg">
+                            </div>
+                            <div class="skill-desc flex flex-c">
+                                <span>Python Programming</span>
+                                <span class="t-m">Expert</span>
+                            </div>
+                        </li>
+                        <li class="skill flex align-centre">
+                            <div class="skill-img flex align-centre">
+                                <img src="./static/img/ml.svg">
+                            </div>
+                            <div class="skill-desc flex flex-c">
+                                <span>Deep Learning</span>
+                                <span class="t-m">Advanced</span>
+                            </div>
+                        </li>
+                        <li class="skill flex align-centre">
+                            <div class="skill-img flex align-centre">
+                                <img src="./static/img/java.svg">
+                            </div>
+                            <div class="skill-desc flex flex-c">
+                                <span>Java Programming</span>
+                                <span class="t-m">Advanced</span>
+                            </div>
+                        </li>
+                        <li class="skill flex align-centre">
+                            <div class="skill-img flex align-centre">
+                                <img src="./static/img/database.svg">
+                            </div>
+                            <div class="skill-desc flex flex-c">
+                                <span>Database Administration</span>
+                                <span class="t-m">Intermediate</span>
+                            </div>
+                        </li>
+                        <li class="skill flex align-centre">
+                            <div class="skill-img flex align-centre">
+                                <img src="./static/img/react.svg">
+                            </div>
+                            <div class="skill-desc flex flex-c">
+                                <span>React</span>
+                                <span class="t-m">Advanced</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+
+           <div class="user-posts" style="overflow: hidden;">
+                <div class="user-post-container flex flex-c">
+                    <div class="up-header flex flex-c">
+                        <h3 class="t-head">Timeline</h3>
+                        <ul class="up-types">
+                            <li class="up-t-active">All</li>
+                            <li>Images</li>
+                            <li>Documents</li>
+                            <li>Videos</li>
+                        </ul>
+                    </div>
+
+                    <div class="user-post-box">
+                        <div class="up-container flex flex-c">
+                            
+                            <div class="post-card post-card-type-2">
+        
+                                <div class="post-body">
+                                    <div class="post-body-header">
+                                        <div class="post-icon ">
+                                            <img width="48" loading="lazy" height="48" alt="IBM Systems" src="./static/img/nav-profile-icon.jpg" class="post-t2-round-icon">
+                                        </div>
+                                        <div class="post-body-header-info">
+                                            <span><span class="text-bold hoverable" style="font-size: 14px;">Shaiq Kar</span></span>
+                                            <Span>AWS, Deep Learning, Python 💥</Span>
+                                            <span class="post-type-2-status">2d 
+                                                <span class="dot-sep margin-min"></span>
+                                                <img src="./static/img/world.svg" alt="public" class="hoverable">
+                                            </span>
+                                        </div>
+                                        <span class="post-type-2-3dots ph-dotsMenu hoverable">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false"><path d="M2 10h4v4H2v-4zm8 4h4v-4h-4v4zm8-4v4h4v-4h-4z"></path></svg>
+                                        </span>
+                                    </div>
+                                    <div class="post-text">
+                                        Knowing about the second era of the internet which is represented by blockchain is an interesting task.
+                                        Blockchain is really gonna create a new revolution out there
+                                    </div>
+                                </div>
+                
+                                <div class="post-footer">
+                                    <div class="post-reactions">
+                                        <img src="./static/img/thumb.svg" alt="Thumbs Up">
+                                        <span class="hoverable-blue">19</span>
+                                        <span class="dot-sep"></span>
+                                        <span class="hoverable-blue post-comments">7 Comments</span>
+                                    </div>
+                                    <div class="post-share text-bold">
+                                        <a href="#">
+                                            <img src="./static/img/like.svg" alt="like">
+                                            <!-- <span>Like</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/comment.svg" alt="comment">
+                                            <!-- <span>Comment</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/share.svg" alt="share">
+                                            <!-- <span>Share</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/send.svg" alt="send">
+                                            <!-- <span>Send</span> -->
+                                        </a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="post-card post-card-type-2">
+        
+                                <div class="post-body">
+                                    <div class="post-body-header">
+                                        <div class="post-icon ">
+                                            <img width="48" loading="lazy" height="48" alt="IBM Systems" src="./static/img/nav-profile-icon.jpg" class="post-t2-round-icon">
+                                        </div>
+                                        <div class="post-body-header-info">
+                                            <span><span class="text-bold hoverable" style="font-size: 14px;">Shaiq Kar</span></span>
+                                            <Span>AWS, Deep Learning, Python 💥</Span>
+                                            <span class="post-type-2-status">4d 
+                                                <span class="dot-sep margin-min"></span>
+                                                <img src="./static/img/world.svg" alt="public" class="hoverable">
+                                            </span>
+                                        </div>
+                                        <span class="post-type-2-3dots ph-dotsMenu hoverable">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" width="24" height="24" focusable="false"><path d="M2 10h4v4H2v-4zm8 4h4v-4h-4v4zm8-4v4h4v-4h-4z"></path></svg>
+                                        </span>
+                                    </div>
+                                    <div class="post-text">
+                                        Finally created an efficent way to do hoffman encoding on a biased CNN model, by reducing the path traversal
+                                        time by almost 46%
+                                    </div>
+                                </div>
+                
+                                <div class="post-footer">
+                                    <div class="post-reactions">
+                                        <img src="./static/img/thumb.svg" alt="Thumbs Up">
+                                        <span class="hoverable-blue">19</span>
+                                        <span class="dot-sep"></span>
+                                        <span class="hoverable-blue post-comments">7 Comments</span>
+                                    </div>
+                                    <div class="post-share text-bold">
+                                        <a href="#">
+                                            <img src="./static/img/like.svg" alt="like">
+                                            <!-- <span>Like</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/comment.svg" alt="comment">
+                                            <!-- <span>Comment</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/share.svg" alt="share">
+                                            <!-- <span>Share</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/send.svg" alt="send">
+                                            <!-- <span>Send</span> -->
+                                        </a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                            <div class="post-card">
+                                <div class="post-body">
+                                    <div class="post-body-header">
+                                        <div class="post-icon">
+                                            <img width="48" loading="lazy" height="48" alt="IBM Systems" src="./static/img/nav-profile-icon.jpg">
+                                        </div>
+                                        <div class="post-body-header-info">
+                                            <span class="text-bold hoverable" style="font-size: 14px;">Shaiq Kar</span>
+                                            <Span>AWS, Deep Learning, Python 💥</Span>
+                                            <span class="post-type-2-status">5d 
+                                                <span class="dot-sep margin-min"></span>
+                                                <img src="./static/img/world.svg" alt="public" class="hoverable">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="post-text">
+                                        Before you can transform your business, you need IT infrastructure built for hybrid multicloud.Unlock the potential of your hybrid cloud infrastructure,
+                                        <span hidden id="hiddenText">by harnessing the power of the right hybrid multicloud strategy, you can maintain stability even during the biggest disruptions.</span>
+                                        <span id="toggleText" onclick="toggleTextVisibility()" class="hoverable-blue">...see more</span>
+                                    </div>
+                                </div>
+                
+                                <div class="post-thumb">
+                                    <img loading="lazy" alt="IBM infrastructure" src="./static/img/post-thum-ibm.jpg">
+                                </div>
+                
+                                <div class="post-footer">
+                                    <div class="post-reactions">
+                                        <img src="./static/img/thumb.svg" alt="Thumbs Up">
+                                        <img src="./static/img/heart.svg" alt="Heart">
+                                        <img src="./static/img/bulb.svg" alt="Idea">
+                                        <span class="hoverable-blue">1,864</span>
+                                        <span class="dot-sep"></span>
+                                        <span class="hoverable-blue post-comments">17 Comments</span>
+                                    </div>
+                                    <div class="post-share text-bold">
+                                        <a href="#">
+                                            <img src="./static/img/like.svg" alt="like">
+                                            <!-- <span>Like</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/comment.svg" alt="comment">
+                                            <!-- <span>Comment</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/share.svg" alt="share">
+                                            <!-- <span>Share</span> -->
+                                        </a>
+                                        <a href="#">
+                                            <img src="./static/img/send.svg" alt="send">
+                                            <!-- <span>Send</span> -->
+                                        </a>
+                                    </div>
+                                </div>
+                
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+           </div>
+
+        </div>
+
+    </main>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="./static/js/app.js"></script>
+
+</body>
+
+</html>
+
