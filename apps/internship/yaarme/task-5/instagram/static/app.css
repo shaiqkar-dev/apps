@@ -82,7 +82,8 @@ img {
         box-shadow: var(--shadow);
         justify-content: flex-start;
         z-index: 100;
-        background: #fff;
+        background: #0073b1;
+        color: #fff;
     }
 
     header .profile {
@@ -90,7 +91,7 @@ img {
     }
     .profile .back svg {
         width: 1rem;
-        fill: #000;
+        fill: #fff;
     }
     .profile .cwith {
         margin-left: 1rem;
@@ -107,7 +108,7 @@ img {
     }
     .vinfo svg {
         width: 1.25rem;
-        fill: #000;
+        fill: #fff;
     }
     .vinfo span {
         padding: 0 .5rem;
